@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section">
+        <header class="header">
+            <img class="header-img" src="Htmlimages/Header.png">
+        </header>
+        <section class="image-sec">
+            <div class="bg-container">
+                <form action = "sucess.html" onsubmit="return validateForm()" novalidate>
+                    <legend class="legend">GET YOUR HOME STYLED BY STYLE EXPERTS TO CREATE STUNNING ROOMS YOU'LL LOVE</legend>
+                    <div class="margin-container">
+                        <label for="fname" class="label">Full Name*</label>
+                        <input type="text" id="fname" class="color" onblur = validate1()>
+                        <div id = "error1" class="error"></div>
+                    </div>
+                    <div class="margin-container">
+                        <label for="email" class="label">Email Id*</label>
+                        <input type="email" id="email" class="color" onblur = validate2()>
+                        <div id="error2" class="error"></div>
+                    </div>
+                    <div class="margin-container">
+                        <label for="mobile" class="label">Mobile Number*</label>
+                        <input type="text" id="mobile" class="color" onblur = validate3()>
+                        <div id="error3" class="error"></div>
+                    </div>
+                    <div class="margin-container">
+                        <label for="city" class="label">City*</label>
+                        <select name="city" id="city" class="color">
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Nagpur">Nagpur</option>
+                        </select>
+                        <div id="error4" class="error"></div>
+                    </div>
+                    <div class="margin-container1">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember" class="label1">Yes, I would like to get important updates on <i class="fab fa-whatsapp"></i><span class="remember-span"> Whats app</span></label>
+                    </div>
+                    <div class="button">
+                        <input type="submit" id="save" value="SUBMIT"class="button-1">
+                    </div>
+                </form>
+            </div>    
+        </section>
+        <section class="card-container">
+            <h3 class="card-heading">HOW IT WORKS</h3>
+            <div class="cards">
+                <div class="card">
+                    <span class="square">01</span>
+                    <P>TELL US ABOUT YOURSELF</P>
+                    <p class="card-para">Talk to our designer so that we know more about your style.</p>
+                </div>
+                <div class="card">
+                    <span class="square">02</span>
+                    <P>LET'S MEET</P>
+                    <p class="card-para">Book an appointment to meet a D'Decor style consultant</p>
+                </div>
+                <div class="card card1">
+                    <span class="square">03</span>
+                    <P>CREATE AND COMPLETE</P>
+                    <p class="card-para">Watch your dream home come alive.</p>
+                </div>
+            </div>
+        </section>
+        <section class="carousel">
+                <h3 class="carousel-heads">DECOR CONCEPTS</h3>
+                <div class="carousel-div">
+                    <i class="fa-solid fa-angle-left padding-right" onClick="previous()" onClick="back()"></i>
+                    <div class="carousel-div1">
+                        <h3 class="cost-head1">COASTAL</h3>
+                        <p class="cost-para1" id="paragraph"></p>
+                    </div>
+                        <img id="slider" class="image-slider">
+                        <i class="fa-solid fa-angle-right padding-left" onClick="next()" onClick="front()"></i>
+                </div>
+        </section>
+        <section class="decor">
+            <h3 class="decor-head">TESTIMONIAL</h3>
+            <div class="decor-div">
+                <div class="decor-div1">
+                    <p class="decor-para1">We are loving the mood. It is exactly what we wanted for our first house</p>
+                    <div class="anchor">
+                        <a  href="#0">SANDEEP SHAH</a>
+                        <a  href="#0">LIVING ROOM</a>
+                    </div>
+                    <p class="decor-para">CLOSE TO NATURE: Green can create a calm haven in your lounge, add a sense of prosperity in your home office, lend a nurturing vibe in your kitchen and revelatize in your bottom.</p>
+                </div>
+                <div class="img">
+                    <img src="Htmlimages/livingroom2.png" class="images">
+                </div>
+            </div>
+            <div class="decor-div">
+                <div class="decor-img img">
+                    <img src="Htmlimages/livingroom3.png" class="images" style="max-width:100%">
+                </div>
+                <div class="decor-div2">
+                    <p class="decor-para1">A simple modern look was what i wanted for my space</p>
+                    <div class="anchor">
+                        <a href="#0">ESKARIA KHALIFA</a>
+                        <a href="#0">LIVING ROOM</a>
+                    </div>
+                    <p class="decor-para">A HOME AWAY FROM HOME: A simple modern look was what i wanted for my space: I asked my stylist to help me to create calm and releaxing space which is what i wanted after a long day at work. Keeping that in mind, she curated mood boards especially for me and i absolutely loved it.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer-sec">
+            <img src="Htmlimages/Vector Smart Object.png">
+            <small class="copyright">COPYRIGHT 2019. ALL RIGHTS RESERVED.</small>>
+        </footer>
+      
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
